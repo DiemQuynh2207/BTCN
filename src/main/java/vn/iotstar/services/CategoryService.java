@@ -24,8 +24,7 @@ public interface CategoryService {
 	void deleteById(Long id);
 
 	long count();
-
-
+	public Page<Category> findByNameContaining(String keyword, Pageable page) ;
 	
 	
 }
